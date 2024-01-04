@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "e19272cc-b62f-423e-a69d-895dadf26804",
+		"name": "String Conversation APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25254695"
+	},
+	"item": [
+		{
+			"name": "Check Hexadecimal String",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_input",
+							"value": "0x33A3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/checkHexadecimal",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"checkHexadecimal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert 2-bit Binary into words",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_input",
+							"value": "11111111000000001010101000001111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/numberToWords",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"numberToWords"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
